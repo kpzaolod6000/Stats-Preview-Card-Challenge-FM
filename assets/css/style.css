@@ -114,3 +114,70 @@ body{
     width: 100%;
     mix-blend-mode: multiply;
 }
+
+/**
+ * RESPONSIVE
+*/
+
+@media (max-width: 375px){
+
+    .card{
+        border-radius: 10px;
+        height: 830px;
+        width: 326px;
+        margin: 25px;
+    }
+    
+    /**
+     * Left
+     */
+
+    .left{
+        top: 250px;
+        left: 0%;
+        width: 100%;
+        height: calc(830px - 250px);
+        padding-block: 40px;
+        padding-inline: 25px;
+    }
+
+    .left .l-concept{
+        text-align: center;
+    }
+
+    .left .l-concept h1{
+        font-size: 1.7rem;
+        margin-block-end: 1rem;
+    }
+
+    .left .l-concept p {
+        margin-bottom: 2px;
+    }
+    
+    .left .l-request {
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left .l-request .l-request-item{
+        text-align: center;
+        margin-block-end: 15px;
+    }
+
+    /**
+     * Right
+     */
+    .right{
+        
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: calc(850px - 600px);
+        border-radius: 10px 10px 0 0;
+    }
+    
+}
